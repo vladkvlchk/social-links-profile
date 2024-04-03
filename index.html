@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <title>Social links profile</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:wght@100..900&family=Outfit:wght@100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+
+      * {
+        --color-primary: hsl(75, 94%, 57%);
+        --color-white: hsl(0, 0%, 100%);
+        --color-grey: hsl(0, 0%, 20%);
+        --color-dark-grey: hsl(0, 0%, 12%);
+        --color-off-black: hsl(0, 0%, 8%);
+      }
+
+      h2 {
+        font-weight: 500;
+        margin-bottom: 0;
+      }
+
+      body {
+        background-color: var(--color-off-black);
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        font-family: "Inter", sans-serif;
+      }
+
+      .card {
+        background-color: var(--color-dark-grey);
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: var(--color-white);
+        text-align: center;
+        padding: 28px;
+      }
+
+      .avatar img {
+        width: 80px;
+        height: 80px;
+        border-radius: 100px;
+      }
+
+      .location {
+        color: var(--color-primary);
+        margin: 10px;
+      }
+
+      .quote {
+        opacity: 0.75;
+        font-size: 13px;
+        margin-top: 26px;
+      }
+
+      .links {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .links button {
+        width: 260px;
+        color: var(--color-white);
+        background-color: var(--color-grey);
+        border: 0;
+        font-weight: 600;
+        padding: 16px;
+        margin-top: 12px;
+        border-radius: 8px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <picture class="avatar">
+        <img src="./assets/images/avatar-jessica.jpeg" alt="avatar" />
+      </picture>
+      <div>
+        <h2>Jessica Randall</h2>
+        <h5 class="location">London, United Kingdom</h5>
+        <p class="quote">"Front-end developer and avid reader."</p>
+      </div>
+      <div class="links">
+        <a href="https://github.com">
+          <button>GitHub</button>
+        </a>
+        <a href="#">
+          <button>Frontend Mentor</button>
+        </a>
+        <a href="#">
+          <button>LinkedIn</button>
+        </a>
+        <a href="https://twitter.com">
+          <button>Twitter</button>
+        </a>
+        <a href="https://instagram.com">
+          <button>Instagram</button>
+        </a>
+      </div>
+    </div>
+  </body>
+</html>
